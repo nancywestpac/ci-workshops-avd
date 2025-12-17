@@ -93,6 +93,15 @@ local_users:
   sha512_password: $6$arista$iYJFw2y83sPVsI/weZctznrCDRtrFf7l3FYnqOMSQOTpiSssO.vf.qKRnHIc91NPEqJ7bqzvruuij2CcVrmp//
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCkUwTWM8+ui5Uv4xQm1DMX0e++IWfPP3jQSvxq4Bzhp/CHZGw5u1b8P/ylqaH6LBDT4mskVc49P93DEllwzIQwx+bwMXb16Q2Q/bseef04It65Y2+JNMrZAegJTh1uh+hQHGuiC2t/uoEneO3pdaSCHzH9/gbsMVLxGpgd+79xGYMt4ONdjzPpL8w31L8T9oCszjKVQ/aiMdkMNbf2Ev3Qs1fHIZH0X1lxuUSsllLhfpnbGDvrey9JHcuI7H6kHuyvD1F75tSDZQx5+XEOs69D3U9EM/g0VDdMW80JrwvAgwgZRlbtaM3JQCclDItG93g9KJ/u8vR/+Iqf8mEFqws9
     arista@westpac-dc-13-b3bd6e13-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.109
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
